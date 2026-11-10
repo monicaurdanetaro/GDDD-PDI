@@ -553,6 +553,33 @@ h1{text-transform:uppercase;font-weight:900;letter-spacing:-.025em}
 .tab{border-radius:12px 12px 0 0}
 .stack .B,.pill.B{color:#1a1a2e}
 .bar.B{color:#1a1a2e}
+&lt;/style&gt;&lt;style id=&quot;ftd-ui-overrides-2&quot;&gt;
+/* Encabezado claro como el cronograma */
+header{background:var(--bg) !important;background-image:none !important;color:var(--text) !important;overflow:visible}
+header .wrap{padding-block:32px 4px}
+.wrap{padding-left:24px !important;padding-right:24px !important}
+.wm{display:none}
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.2em;opacity:1;color:#006aa8}
+.eyebrow::before{content:&quot;&quot;;width:8px;height:8px;background:#0084d0;border-radius:50% 50% 50% 0}
+h1{margin:10px 0 6px;font-size:32px;font-weight:900;color:#002858;line-height:1.1}
+.sub{opacity:1;color:var(--muted);font-size:15px}
+.flag{height:32px;border-radius:6px;box-shadow:0 1px 3px rgb(0 40 88 / .12)}
+/* Pestañas GDDD / PDI como control segmentado */
+.tabs{display:inline-flex;gap:4px;margin-top:20px;padding:4px;border:1px solid var(--line) !important;border-radius:14px;background:var(--surface)}
+.tab{color:var(--muted);opacity:1;border:0 !important;border-radius:10px;padding:7px 18px;margin:0;font-size:13px;font-weight:700;letter-spacing:.04em}
+.tab[aria-selected=&quot;true&quot;]{background:#002858;color:#fff}
+.tab:focus-visible{outline:2px solid #0084d0}
+/* KPIs como tarjetas */
+.kpis{gap:16px;margin-top:20px;border:0 !important}
+.kpi,.kpi+.kpi{background:var(--surface);border:1px solid var(--line) !important;border-radius:16px;padding:18px 20px !important;
+  box-shadow:0 1px 3px rgb(0 40 88 / .08),0 4px 16px rgb(0 40 88 / .04)}
+.kpi .v{font-size:34px;font-weight:800;color:#002858}
+.kpi .l{opacity:1;color:var(--muted);font-size:11px;font-weight:700;margin-top:8px}
+.kpi .d{opacity:1;color:var(--muted);font-size:12px}
+main .wrap{padding-block:20px 40px}
+@media (prefers-color-scheme: dark){:root:not([data-theme=&quot;light&quot;]) h1,:root:not([data-theme=&quot;light&quot;]) .kpi .v{color:#7fb2e5}
+  :root:not([data-theme=&quot;light&quot;]) .eyebrow{color:#4db8f0}}
+@media (max-width:820px){.kpis{grid-template-columns:1fr 1fr}}
 &lt;/style&gt;&lt;/body&gt;&lt;/html&gt;"></iframe>
 </div>
 
